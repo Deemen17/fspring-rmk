@@ -5,8 +5,8 @@ product_name = "FSPRING-RMK-BLE"
 vendor_id = 0xde17
 product_id = 0xf516
 manufacturer = "DEEMEN17"
-chip = "nrf52840"
-# board = "nice!nano_v2"
+# chip = "nrf52840"
+board = "nice!nano_v2"
 
 [matrix]
 # Input and output pins are mandatory
@@ -63,8 +63,12 @@ adc_divider_total = 2806
 # Set the BLE tx power; higher means better signal but more power consumption. For nRF52840 the maximum tx power is 8.
 default_tx_power = 8
 # Whether to enable 2M PHY, defaults to true.
-# use_2m_phy = true
+use_2m_phy = true
 # [Deprecated] Pin that reads battery's charging state, `low-active` means the battery is charging when `charge_state.pin` is low
 # charge_state = { pin = "PIN_1", low_active = true }
 # [Deprecated] Output LED pin that blinks when the battery is low
 # charge_led= { pin = "PIN_2", low_active = true }
+
+[storage]
+clear_storage = false
+
